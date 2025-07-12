@@ -92,6 +92,11 @@ span{
 
 .buttonDiv{
     margin-top: var(--spacing-xl);
+    transition: all 0.5s;
+}
+
+.buttonDiv:hover{
+    transform: translateY(-2px);
 }
 
 .button{
