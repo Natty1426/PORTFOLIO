@@ -1,0 +1,108 @@
+:root{
+
+    /** TYPOGRAPHY**/
+    --font-family: 'Inter', sans-serif;
+    --font-size-xl:48px;
+    --font-size-l:32px;
+    --font-size-md:18px;
+    --font-size-sm:12px;
+
+    /** COLOUR**/
+    --bg-grey: rgb(198, 197, 197);
+    --bg-orange: rgb(219, 135, 61);
+    
+    /* Spacing variables for consistent layout */
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 40px;
+
+     /* Border radius for rounded corners */
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-full: 50%;
+    
+}
+
+/**UNIVERSAL SELECTOR AND BODY TAG**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+/** STYLES FOR THE FIRST PAGE**/
+
+.firstPage{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.typo, .imageDiv{
+    width: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.innerTypo{
+    width: 75%;
+}
+
+.innerTypo h3{
+    font-size: var(--font-size-l);
+}
+
+h1{
+    font-size: var(--font-size-xl);
+}
+
+h5{
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-lg);
+    background-color: var(--bg-orange);
+    width: 75%;
+    padding-left: var(--spacing-sm);
+}
+
+p{
+    font-size: var(--font-size-sm);
+}
+
+span{
+    color:var(--bg-orange);
+}
+
+.imageDiv{
+    background-color: var(--bg-grey);
+}
+
+.image{
+    width: 80%;
+}
+
+.buttonDiv{
+    margin-top: var(--spacing-xl);
+}
+
+.button{
+    text-decoration: none;
+    background-color: var(--bg-orange);
+    color: white;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-lg);
+    transition: all 0.9s;
+}
+
+.button:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
