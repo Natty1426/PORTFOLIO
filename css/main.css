@@ -10,7 +10,7 @@
     /** COLOUR**/
     --bg-grey: rgb(198, 197, 197);
     --bg-orange: rgb(219, 135, 61);
-    
+    --bg-lightgrey:rgb(251, 245, 245);
     /* Spacing variables for consistent layout */
     --spacing-xs: 8px;
     --spacing-sm: 12px;
@@ -66,7 +66,7 @@ h1{
     font-size: var(--font-size-xl);
 }
 
-h5{
+.innerTypo h5{
     font-size: var(--font-size-md);
     margin-bottom: var(--spacing-lg);
     background-color: var(--bg-orange);
@@ -78,7 +78,7 @@ p{
     font-size: var(--font-size-sm);
 }
 
-span{
+.innerTypo span{
     color:var(--bg-orange);
 }
 
@@ -110,4 +110,63 @@ span{
 
 .button:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/** STYLES FOR THE SECOND PAGE**/
+
+.secondPage{
+    background-color: var(--bg-lightgrey);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/** STYLES FOR THE ASIDE BAR**/
+.aside{
+    width: 20%;
+    background-color: var(--bg-orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+}
+
+.asideImage{
+    width: 100%;
+    background-color: var(--bg-grey);
+}
+
+.asideDiv{
+    margin: 32px 0;
+}
+
+.asideLinks{
+    list-style: none;
+    line-height: var(--spacing-xl);
+}
+
+.asideLinks a{
+    text-decoration: none;
+    font-weight:600;
+    color: black;
+    transition: all 0.5s ;
+}
+
+.asideLinks a:hover{
+    color: white;
+}
+
+/** ENDS HERE**/
+
+.aboutMePage{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe{
+    width: 70%;
+    
 }
