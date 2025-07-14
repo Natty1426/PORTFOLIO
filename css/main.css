@@ -163,10 +163,28 @@ p{
     width: 70%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .aboutMe{
     width: 70%;
     
+}
+
+.aboutMe .div{
+    border: 1px solid var(--bg-grey);
+    margin: var(--spacing-xxl);
+}
+
+.aboutMe h1{
+     font-size: var(--font-size-xl);
+     text-align: center;
+}
+
+.aboutMe span{
+    font-weight: 900;
+}
+
+
+.aboutMe p, h5{
+    text-align: left;
 }
